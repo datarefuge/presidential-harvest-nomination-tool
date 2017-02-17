@@ -230,12 +230,15 @@ function handleSubmit( e ) {
   data[ORGANIZATION_ID] = organizationID;
   data[SUBORG_ID] = suborgID;
   data[SUBPRIMER_ID] = subprimerID;
-  //data[CRAWLABLE_ID] = crawlableID;
   data[FTP_ID] = ftpID ? 'Yes' : '';
   data[VISUALIZATION_ID] = visualizationID ? 'Yes' : '';
   data[DIFFICULTY_ID] = difficultyID ? 'Yes' : '';
   data[DATABASE_ID] = databaseID ? 'Yes' : '';
   data[COMMMENT_ID] = commentID;
+
+  if (document.getElementById('crawlableID').checked) {
+    data[CRAWLABLE_ID] = crawlableId;
+  }
 
   $.get(GOOGLE_FORMS_URL, data)
     .then(function () {
@@ -249,7 +252,7 @@ function handleSubmit( e ) {
     .catch(function (error) {
       $('#submit').prop('disabled', false);
       showStatus('failure', 'Could not submit URL (' + (error.statusText || 'Generic error') + ')');
-    })
+    });
 }
 
 /* When the popup loads: Autopopulate the name, event name and email if it has been submitted before,
