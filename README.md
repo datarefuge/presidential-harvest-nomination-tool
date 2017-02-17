@@ -1,8 +1,10 @@
+[![Chrome Web Store](https://img.shields.io/badge/chrome--web--store-v%200.0.4.1-blue.svg)](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok)
 # 2016 Presidental Harvest - Nomination Tool
 
-(Developers please see [Contributing and Forking This Tool](./Contributing.md))
+Developers please see [Contributing and Forking This Tool](./Contributing.md)  
+For usage skip straight to [Usage Instructions](#usage)
 
-(for instructions skip straight to [Usage Instructions](#Usage))
+## What is this?
 
 Nomination tool Chrome Bookmarlet for [End of Term Presidental Harvest 2016](http://digital2.library.unt.edu/nomination/eth2016/about/).
 
@@ -18,33 +20,28 @@ This was in preparation for [Guerrilla Archiving: Saving Environmental Data from
 
 This Chrome Extension is used for keeping track of what everyone is working on, once clicked the extension will record the URL you have just submitted for nomination to a [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf6Yc_p3VjHELQOactjYGJIGpU4uwBg5omZAZsbTQZXbT87tQ/viewform).
 
-
-
-## Chrome Extension installation instructions
+## Installation
 
 We have published a version of the chrome Extension [on the Chrome Store](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok). Just click on that link in Chrome and hit ```add to Chrome```!
 
-### Alternate: Install from source
+## Usage
 
-**Don't follow these instructions on Guerilla Archiving Day! Instead Install from Chrome Store as above. Preserved here for groups that want to fork the extension**
-1.	Download or Clone this repo: https://github.com/CivicTechTO/presidential-harvest-nomination-tool<
-img src="https://raw.githubusercontent.com/mi-lee/presidential-harvest-nomination-tool/master/docs/img/gitclone.png" width="700" align="middle")/>
+1. Go to the URL that you wish to nominate.
 
-2. Open Google Chrome -> Settings -> Extensions, then click Load unpacked extension
-<img src="https://raw.githubusercontent.com/mi-lee/presidential-harvest-nomination-tool/master/docs/img/loadExtension.png" width="700" align="middle"/>
+1. Click the extension icon near the address bar (the icon looks like a black magnifying glass). A form will pop up beneath the icon. The title and URL will be autofilled with the current URL of the tab, and once you have submitted the form one time, your name/email/event information will also be pre-filled.
 
-3. Choose the folder containing the extension files, and click select
-<img src="https://raw.githubusercontent.com/mi-lee/presidential-harvest-nomination-tool/master/docs/img/selectDirectory.png" width="700" align="middle"/>
+1. If you're working with an EDGI subprimer ([found here](https://envirodatagov.org/agency-forecasts/)), you should fill-in the corresponding Agency Office Code that relates to particular subprimers. Filling in the code will autocomplete the agency in the dropdown above.
 
-4. Extension should appear now
-<img src="https://raw.githubusercontent.com/mi-lee/presidential-harvest-nomination-tool/master/docs/img/postinstallExtension.png" width="700" align="middle"/>
+1. Fill in the subprimer field with the corresponding numbered link in the subprimer you're working with. 
 
+1. If the page contains uncrawlable content, note that by selecting one or a combination of the four toggles. On subsequent uses, these will be pre-filled, though you can alter them at any time just by choosing something else.
 
-## Usage 
+  <img src="./docs/img/eot-nomination-ui-006.png" width="500" />
 
-5. Go to the URL that you wish to nominate, click the extension icon near the address bar. A form will pop up beneath the icon. The title and URL will be autofilled with the current URL of the tab, and on subsequent uses your name/email/event information will also be pre-filled. If you're working with an EDGI subprimer ([found here](https://envirodatagov.org/agency-forecasts/)), you should fill-in the corresponding Agency Office Code that relates to particular subprimers. Filling in the code will autocomplete the agency in the dropdown above. The Sub-primer Num should be filled in correspondingly to particular numbered link in the subprimer you're working with. If the page contains uncrawlable content, note that by clicking the checkbox. On Subsequent uses, these will also be pre-filled, though you can alter them at any time just by choosing something else.
-![Here](docs/img/newExtensionUI_2.png)  
+  Examples of each of the four toggles to indicate uncrawlable content are:  
+    1) **FTP** [ftp.aoml.noaa.gov/phod/pub/ARGO_FTP/argo](ftp://ftp.aoml.noaa.gov/phod/pub/ARGO_FTP/argo)  
+    2) **Many Files** [nohrsc.noaa.gov/gisdatasets/](https://www.nohrsc.noaa.gov/gisdatasets/)  
+    3) **Database** [eere.energy.gov/library](https://www1.eere.energy.gov/library/default.aspx)  
+    4) **Visualization/Interactive** [nohrsc.noaa.gov/interactive/html/map.html](https://www.nohrsc.noaa.gov/interactive/html/map.html)  
 
-7. Move on to the next URL and hit the extension again
-
-Happy Archiving!!!
+After submitting, move on to the next URL and click the extension icon again. Happy Archiving!!!
